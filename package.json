@@ -1,0 +1,28 @@
+{
+  "name": "sequelize-ext-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pg": "^4.4.0",
+    "sequelize": "^3.3.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize-cli": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "migrate": "dropdb 'sequelize_test'; createdb 'sequelize_test' && sequelize db:migrate",
+    "psql": "psql -d \"sequelize_test\" -c 'select * from \"SequelizeMeta\"'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igrayson/sequelize-ext-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igrayson/sequelize-ext-demo/issues"
+  },
+  "homepage": "https://github.com/igrayson/sequelize-ext-demo#readme"
+}
