@@ -6,9 +6,9 @@ module.exports = {
     .then(function() {
       return queryInterface.sequelize.query('CREATE EXTENSION fuzzystrmatch;')
     })
-    //.then(function() {
-    //  return queryInterface.sequelize.query('CREATE EXTENSION postgis_tiger_geocoder;')
-    //})
+    .then(function() {
+      return queryInterface.sequelize.query('CREATE EXTENSION postgis_tiger_geocoder;')
+    })
     .then(function() {
       return queryInterface.sequelize.query('SELECT * from "SequelizeMeta";');
     })
